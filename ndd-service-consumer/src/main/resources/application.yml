@@ -1,0 +1,36 @@
+server:
+  port: 8082
+  tomcat:
+    max-connections: 300
+    max-threads: 300
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: ndd-service-consumer
+
+dubbo:
+  application:
+    id: ndd-service-consumer
+    name: ndd-service-consumer
+  consumer:
+    actives: 0
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+    queues: 1000
+    threadpool: cached
+    threads: 2000
+  provider:
+    acceptes: 0
+    connections: 1000
+    executes: 0
+    retries: 3
+    threadpool: cached
+    threads: 2000
+  registry:
+    address: nacos://127.0.0.1:8848
+    protocol: dubbo
+  scan:
+    base-packages: com.bluesgao.ndd.service
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nacos-dubbo-demo.iml" filepath="$PROJECT_DIR$/nacos-dubbo-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ndd-api/ndd-api.iml" filepath="$PROJECT_DIR$/ndd-api/ndd-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ndd-service-consumer/ndd-service-consumer.iml" filepath="$PROJECT_DIR$/ndd-service-consumer/ndd-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ndd-service-provider/ndd-service-provider.iml" filepath="$PROJECT_DIR$/ndd-service-provider/ndd-service-provider.iml" />
+    </modules>
+  </component>
+</project>

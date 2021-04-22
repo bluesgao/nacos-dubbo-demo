@@ -1,0 +1,36 @@
+debug: true
+dubbo:
+  application:
+    id: ndd-service-provider
+    name: ndd-service-provider
+  consumer:
+    actives: 0
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+    queues: 1000
+    threadpool: cached
+    threads: 2000
+  provider:
+    acceptes: 0
+    connections: 1000
+    executes: 0
+    retries: 3
+    threadpool: cached
+    threads: 2000
+  registry:
+    address: nacos://127.0.0.1:8848
+    protocol: dubbo
+  scan:
+    base-packages: com.bluesgao.ndd.service
+
+sentinel:
+  application:
+    name: ndd-service-sentinel-provider
+    port: 8719
+    dashboard: localhost:8858
+  nacos:
+    enable: true
+    server_addr: 127.0.0.1:8848
+    group_id: SENTINEL_GROUP

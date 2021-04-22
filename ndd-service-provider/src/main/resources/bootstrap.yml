@@ -1,0 +1,20 @@
+
+server:
+  port: 8081
+  tomcat:
+    max-connections: 300
+    max-threads: 300
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: ndd-service-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: json  # 主配置 配置文件类型
+        group: TEST_GROUP
+        prefix: ndd_cfg
+#        namespace: public
+        refresh-enabled: true
+
